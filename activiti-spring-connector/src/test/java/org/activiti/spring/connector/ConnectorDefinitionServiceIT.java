@@ -47,7 +47,7 @@ public class ConnectorDefinitionServiceIT {
         assertThat(connectorDefinitions.get(0).getName()).isEqualTo("Name-of-the-connector");
         assertThat(connectorDefinitions.get(0).getActions().size()).isEqualTo(2);
         assertThat(connectorDefinitions.get(0).getActions().get("actionId1").getName()).isEqualTo("actionName1");
-        assertThat(connectorDefinitions.get(0).getActions().get("actionId1").getInput().get(0).getName()).isEqualTo("input-variable-name-1");
-        assertThat(connectorDefinitions.get(0).getActions().get("actionId1").getOutput().get(0).getName()).isEqualTo("output-variable-name-1");
+        assertThat(connectorDefinitions.get(0).getActions().get("actionId1").getInputs().get(0).getName()).isEqualTo("input-variable-name-1");
+        assertThat(connectorDefinitions.get(0).getActions().get("actionId1").getOutputs().get(0).getName()).isEqualTo("output-variable-name-1");
     }
 }
